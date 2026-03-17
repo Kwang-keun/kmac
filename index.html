@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="한국무예위원회(KMC)는 TAFISA 국가회원으로 승인된 대한민국 대표 전통무예 통합단체. IOC·UNESCO 공인, UIA 국제기구 등록.">
+  <title>한국무예위원회 (KMC) | Korea Martial Arts Committee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV: 가로형 로고 사용 -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo">
+    <img src="kmc_logo_wide.png" alt="한국무예위원회" class="nav-logo-img">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">단체 소개</a></li>
+    <li><a href="#international">국제기구</a></li>
+    <li><a href="#programs">무예 종목</a></li>
+    <li><a href="#business">주요 사업</a></li>
+    <li><a href="#news">공지·소식</a></li>
+    <li><a href="#membership" class="nav-join">회원 가입</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+</nav>
+<div class="movl" id="movl" onclick="toggleNav()"></div>
+<div class="mnav" id="mnav">
+  <button class="mclose" onclick="toggleNav()">✕</button>
+  <ul class="mlinks">
+    <li><a href="#about" onclick="toggleNav()">단체 소개</a></li>
+    <li><a href="#international" onclick="toggleNav()">국제기구</a></li>
+    <li><a href="#programs" onclick="toggleNav()">무예 종목</a></li>
+    <li><a href="#business" onclick="toggleNav()">주요 사업</a></li>
+    <li><a href="#news" onclick="toggleNav()">공지·소식</a></li>
+    <li><a href="#membership" onclick="toggleNav()">회원 가입</a></li>
+  </ul>
+</div>
+
+<!-- HERO: 원형 KMC 로고 메인, WHF + 경찰무술 파트너 -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div><div class="hero-grid"></div>
+  <div class="r1 hero-ring"></div><div class="r2 hero-ring"></div><div class="r3 hero-ring"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span>TAFISA NATIONAL MEMBER · UIA INTERNATIONAL ORGANIZATION</span></div>
+
+    <!-- 메인 KMC 원형 로고 -->
+    <div class="hero-logo-main">
+      <img src="kmc_logo_circle.png" alt="한국무예위원회 로고">
+    </div>
+
+    <!-- 파트너 로고 3개 -->
+    <div class="hero-partner-logos">
+      <div class="partner-item">
+        <img src="whf_emblem.png" alt="세계합기도연맹 WHF">
+        <span class="partner-label">WHF</span>
+      </div>
+      <div class="hero-sep"></div>
+      <div class="partner-item">
+        <img src="tafisa_hd.png" alt="TAFISA">
+        <span class="partner-label">TAFISA</span>
+      </div>
+      <div class="hero-sep"></div>
+      <div class="partner-item">
+        <img src="police_blue.png" alt="국제경찰무술연맹">
+        <span class="partner-label">IPMAF</span>
+      </div>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="t1">한국무예위원회</span>
+      <span class="t2">Korea Martial Arts Committee</span>
+    </h1>
+    <p class="hero-sub">무예로 하나 되는 세계 · UNITING THE WORLD THROUGH MARTIAL ARTS</p>
+    <div class="hero-intl">
+      <span class="ibadge">🌐 TAFISA 국가회원</span>
+      <span class="ibadge">🏛️ UIA 국제기구 등록</span>
+      <span class="ibadge">🏅 IOC · UNESCO 공인</span>
+      <span class="ibadge">🌍 180개국 네트워크</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#membership" class="btn-gold">회원 가입 안내</a>
+      <a href="#about" class="btn-out">단체 소개 보기</a>
+    </div>
+  </div>
+  <div class="scroll-ind" onclick="document.getElementById('stats').scrollIntoView({behavior:'smooth'})">
+    <span>SCROLL</span><div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar" id="stats">
+  <div class="stats-inner">
+    <div class="stat-item rv"><div class="snum"><span class="count" data-target="180">0</span><span class="sunit">개국</span></div><div class="slabel">TAFISA 회원국</div></div>
+    <div class="stat-item rv d1"><div class="snum"><span class="count" data-target="300">0</span><span class="sunit">+</span></div><div class="slabel">TAFISA 가입 단체</div></div>
+    <div class="stat-item rv d2"><div class="snum"><span class="count" data-target="17">0</span><span class="sunit">개</span></div><div class="slabel">국내 시도 지부</div></div>
+    <div class="stat-item rv d3"><div class="snum"><span class="count" data-target="66000">0</span><span class="sunit">+</span></div><div class="slabel">UIA 가입 단체</div></div>
+  </div>
+</div>
+
+<!-- 단체 소개 -->
+<section style="background:var(--charcoal)" id="about">
+  <div class="inner">
+    <div class="slabel2 rv">단체 소개</div>
+    <h2 class="stitle rv">한국무예위원회 <em>(KMC)</em></h2>
+    <div class="divider rv"></div>
+    <div class="about-grid">
+      <div class="rv">
+        <div class="profile-box">
+          <div class="profile-icon">🥋</div>
+          <div class="pname">최 선 길</div>
+          <div class="ptitle">TAFISA 국가회원 한국무예위원회 대표위원장<br>세계합기도연맹(WHF) · 국제경찰무술연맹 총재</div>
+          <div class="pdiv"></div>
+          <ul class="pcareer">
+            <li>전) 고려대학교 KUTM 초대 태권도 시범단장</li>
+            <li>전) 국민생활체육회 전국합기도연합회 사무처장</li>
+            <li>전) 대한체육회 합기도협회 전무이사</li>
+            <li>전) 국민대학교 스포츠외교학 지도교수</li>
+            <li>전) 한양대학교 스포츠산업학 지도교수</li>
+            <li>국민체육진흥공단 전국무예대회 5년 연속 주최</li>
+            <li>문체부장관상 전국청소년호신무예대회 11회 주최</li>
+            <li>화랑청소년 대통령상 · 국무총리배 집행위원장</li>
+            <li>현) 경찰청 산하 강동경찰서 무도사범</li>
+            <li>현) 대한테크볼협회(OCA) 사무총장</li>
+            <li>현) 아시아생활체육총회 조직부위원장</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="pbox rv"><div class="pbox-t">📌 설립 목적</div><div class="pbox-d">대한민국 전통무예종목을 통합·화합하여 무예정신을 진취적으로 발전 승화시키고 TAFISA 설립 목표에 동참, 국제무예경기의 체계화와 세계인의 생활체육무예로 계승하며 국위선양과 국가생활체육무예발전에 기여함을 목적으로 합니다.</div></div>
+        <div class="pbox rv d1"><div class="pbox-t">📋 설립 취지</div><div class="pbox-d">TAFISA(세계생활체육연맹) 180개국 회원국의 국제기구로서, 각 국가의 "고유무예"를 전승하는 국가별 "무예위원회" 설치 필요성에 의거, TAFISA에 의해 대한민국 전체 무예를 대표하는 한국무예위원회(KMC)가 설립되었습니다.</div></div>
+        <div class="pbox rv d2"><div class="pbox-t">⚖️ 지적재산권</div><div class="pbox-d">TAFISA 제 규정에 따라 본회는 국내에서 TAFISA의 심볼, 깃발, 슬로건, 휘장, 주제가 등 모든 지적재산을 보호하고 사용할 권리를 가진 <strong style="color:var(--gold)">대한민국 유일의 기관</strong>입니다.</div></div>
+        <div class="orgwrap rv d3"><div class="orgwrap-t">📊 대한체육회 국제기구 연계 조직도</div><img src="orgchart.png" alt="조직도"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 국제기구 -->
+<section style="background:var(--black)" id="international">
+  <div class="inner">
+    <div class="slabel2 rv">국제기구 현황</div>
+    <h2 class="stitle rv">TAFISA · UIA <em>국제기구 네트워크</em></h2>
+    <div class="divider rv"></div>
+
+    <!-- 로고 쇼케이스 (실제 이미지 5종) -->
+    <div class="intl-logo-row rv">
+      <div class="intl-logo-item">
+        <img src="kmc_logo_circle.png" alt="한국무예위원회">
+        <div class="lname">KMC</div>
+        <div class="ldesc">한국무예위원회</div>
+      </div>
+      <div class="intl-logo-sep"></div>
+      <div class="intl-logo-item">
+        <img src="tafisa_hd.png" alt="TAFISA">
+        <div class="lname">TAFISA</div>
+        <div class="ldesc">세계생활체육연맹</div>
+      </div>
+      <div class="intl-logo-sep"></div>
+      <div class="intl-logo-item">
+        <img src="whf_emblem.png" alt="WHF">
+        <div class="lname">WHF</div>
+        <div class="ldesc">세계합기도연맹</div>
+      </div>
+      <div class="intl-logo-sep"></div>
+      <div class="intl-logo-item">
+        <img src="police_blue.png" alt="국제경찰무술연맹">
+        <div class="lname">IPMAF</div>
+        <div class="ldesc">국제경찰무술연맹</div>
+      </div>
+      <div class="intl-logo-sep"></div>
+      <div class="intl-logo-item">
+        <img src="police_gold.png" alt="국제경찰무술연맹 금색">
+        <div class="lname">IPMAF</div>
+        <div class="ldesc">경찰무술 공식 엠블럼</div>
+      </div>
+    </div>
+
+    <!-- TAFISA 상세 -->
+    <div style="background:var(--charcoal);padding:36px;margin-bottom:24px" class="rv">
+      <div class="tafisa-grid">
+        <div>
+          <div class="slabel2" style="margin-bottom:10px">TAFISA</div>
+          <h3 style="font-family:'Noto Serif KR',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:13px">The Association for International Sport for All</h3>
+          <p style="font-size:13px;line-height:2.1;color:var(--text-muted)">독일 프랑크푸르트 본부. 세계 180개국 약 300개 단체 가입. IOC·UNESCO·UN·WHO 공인 국제스포츠기구.<br><br><strong style="color:var(--gold)">한국무예위원회는 2019년 5월 TAFISA 국가회원으로 공식 승인.</strong> 국내 무예종목 중 유일한 UIA 국제기구 등록 단체.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:16px">
+            <span class="ibadge">🏅 IOC 공인</span><span class="ibadge">📚 UNESCO 공인</span><span class="ibadge">🌐 UN 협력</span><span class="ibadge">🏥 WHO 협력</span>
+          </div>
+        </div>
+        <div>
+          <div class="tafisa-logo-box">
+            <img src="tafisa_hd.png" alt="TAFISA 고화질 로고">
+            <div class="badge">TAFISA OFFICIAL MEMBER</div>
+            <div class="sub">2019년 5월 국가회원 공식 승인</div>
+          </div>
+          <div class="icards">
+            <div class="icard">
+              <img src="whf_emblem.png" alt="WHF">
+              <div class="icard-t">WHF</div>
+              <div class="icard-d">세계합기도연맹<br>UIA 국제기구 등록<br>(2017년 10월)</div>
+            </div>
+            <div class="icard">
+              <img src="police_blue.png" alt="IPMAF">
+              <div class="icard-t">IPMAF</div>
+              <div class="icard-d">국제경찰무술연맹<br>TAFISA 가입단체</div>
+            </div>
+          </div>
+          <!-- 경찰무술 방패 -->
+          <div class="shield-row">
+            <div class="shield-item">
+              <img src="police_shield_blue.png" alt="경찰무술 방패 파란">
+              <span>파란 방패</span>
+            </div>
+            <div class="shield-item">
+              <img src="police_shield_red.png" alt="경찰무술 방패 빨강">
+              <span>빨간 방패</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UIA -->
+    <div style="background:var(--charcoal);padding:32px;margin-bottom:32px" class="rv">
+      <div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start">
+        <div style="flex:1;min-width:260px">
+          <div class="slabel2" style="margin-bottom:10px">UIA</div>
+          <h3 style="font-family:'Noto Serif KR',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:12px">UIA 국제기구 등록</h3>
+          <p style="font-size:13px;line-height:2.1;color:var(--text-muted)">벨기에 브뤼셀 본부. 전세계 66,000여 개 국제협회 가입. <strong style="color:var(--gold)">UN경제사회이사회(UNECOSOC) 자문기관 · UNESCO 회원기구.</strong> 세계합기도연맹(WHF) 주최 50인 이상 행사는 UIA 공식 국제행사로 인정됩니다.</p>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <div style="background:var(--dark);padding:20px;border-left:3px solid var(--gold)">
+            <div style="font-size:12px;font-weight:700;color:var(--gold);margin-bottom:12px;letter-spacing:2px">UIA 등록의 의미</div>
+            <div style="font-size:12px;line-height:2.2;color:var(--text-muted)">
+              ✦ 국제협회로서의 지위와 권리 부여<br>
+              ✦ 국제행사 및 컨벤션 공식 인정<br>
+              ✦ UN·UNESCO 연계 협력 네트워크<br>
+              ✦ 전세계 66,000+ 국제기구 네트워크<br>
+              ✦ <strong style="color:var(--gold)">국내 무예종목 중 유일한 UIA 등록 단체</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 세계 무예단체 -->
+    <h3 class="rv" style="font-family:'Noto Serif KR',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:6px">🌍 TAFISA 등록 세계 무예단체</h3>
+    <p class="rv" style="font-size:13px;color:var(--text-muted);margin-bottom:4px">한국무예위원회가 함께하는 세계 무예 네트워크</p>
+    <div class="world-grid">
+      <div class="wcrd rv"><div class="wflag">🇰🇷</div><div class="wcountry">대한민국</div><div class="worg">합기도 세계본부 (WHF)</div><div class="wdesc">세계합기도연맹. 2017년 UIA 국제기구 승인. 한국무예위원회(KMC)와 TAFISA 회원 활동.</div></div>
+      <div class="wcrd rv d1"><div class="wflag">🇰🇵</div><div class="wcountry">북한</div><div class="worg">국제태권도연맹 (ITF)</div><div class="wdesc">International Taekwondo Federation. 전통 태권도 보급 및 국제 교류 활동.</div></div>
+      <div class="wcrd rv d2"><div class="wflag">🇷🇺</div><div class="wcountry">러시아</div><div class="worg">국제삼보연맹 (FIAS) · RUMA</div><div class="wdesc">삼보(SAMBO) 및 러시아 전통 무술. TAFISA 회원으로 국제 생활체육 무예 교류 활동.</div></div>
+      <div class="wcrd rv d1"><div class="wflag">🇯🇵</div><div class="wcountry">일본</div><div class="worg">세계가라데연맹 (WKF)</div><div class="wdesc">World Karate Federation. 올림픽 공인 가라데 종목 관장. TAFISA 네트워크 활동.</div></div>
+      <div class="wcrd rv d2"><div class="wflag">🌐</div><div class="wcountry">국제</div><div class="worg">세계주짓수연맹 (WJJC)</div><div class="wdesc">World Jiu-Jitsu Championship 주관. 전세계 주짓수 보급 및 국제대회 운영.</div></div>
+      <div class="wcrd rv d3" style="background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.18)"><div class="wflag">🤝</div><div class="wcountry">해외 지부 모집 중</div><div class="worg">해외 지부장 모집</div><div class="wdesc">전세계 무예 네트워크 확장을 위한 해외 지부장을 모집합니다. 함께해 주세요!</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 무예 종목: 경찰무술 실제 로고 사용 -->
+<section style="background:var(--charcoal)" id="programs">
+  <div class="inner">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:40px;flex-wrap:wrap;gap:16px">
+      <div><div class="slabel2 rv">무예 종목</div><h2 class="stitle rv">주요 <em>무예 종목</em></h2></div>
+      <a href="#membership" class="btn-out rv">지도자 등록 →</a>
+    </div>
+    <div class="pg-grid">
+      <div class="pgcard rv" style="background:linear-gradient(135deg,rgba(139,105,20,.22),rgba(201,168,76,.07));border:1px solid rgba(201,168,76,.22)">
+        <div class="pgnum">NO.01 · TAFISA 회원종목</div>
+        <img src="whf_emblem.png" alt="WHF 합기도" class="pgico-img">
+        <div class="pgname">합기도 (Hapkido)</div>
+        <div class="pgdesc">세계합기도연맹(WHF) 주관. UIA 국제기구 등록 종목. 관절기·낙법·호신술을 결합한 한국 고유의 무예.</div>
+        <div class="pgtags"><span class="pgtag">WHF 주관</span><span class="pgtag">UIA 등록</span><span class="pgtag">호신술</span></div>
+        <div class="pgarrow">→</div>
+      </div>
+      <div class="pgcard rv d1">
+        <div class="pgnum">NO.02</div>
+        <img src="police_shield_blue.png" alt="경찰무술 파란 방패" class="pgico-img">
+        <div class="pgname">경찰무술 (Police Martial Arts)</div>
+        <div class="pgdesc">국제경찰무술연맹(IPMAF) 소속. 경찰·경호 특화 실전 무술. 체포술 및 호신술 전문 교육.</div>
+        <div class="pgtags"><span class="pgtag">IPMAF</span><span class="pgtag">실전무술</span><span class="pgtag">경호</span></div>
+        <div class="pgarrow">→</div>
+      </div>
+      <div class="pgcard rv d2">
+        <div class="pgnum">NO.03</div>
+        <img src="police_shield_red.png" alt="경찰무술 빨강 방패" class="pgico-img">
+        <div class="pgname">실전 타격 호신술</div>
+        <div class="pgdesc">현대적 위협 상황 맞춤 실전 호신술. 여성·청소년 특화 프로그램. MBC 생방송 지도 경력 보유.</div>
+        <div class="pgtags"><span class="pgtag">여성특화</span><span class="pgtag">청소년</span><span class="pgtag">실전</span></div>
+        <div class="pgarrow">→</div>
+      </div>
+      <div class="pgcard rv d1"><div class="pgnum">NO.04</div><div class="pgico">🥋</div>
+        <div class="pgname">태권도 (Taekwondo)</div>
+        <div class="pgdesc">올림픽 정식 종목. 고려대학교 국제태권도대회 시범단 활동. 품세 국제심판관 보유.</div>
+        <div class="pgtags"><span class="pgtag">올림픽 종목</span><span class="pgtag">품세</span><span class="pgtag">시범</span></div>
+        <div class="pgarrow">→</div>
+      </div>
+      <div class="pgcard rv d2"><div class="pgnum">NO.05</div><div class="pgico">🗡️</div>
+        <div class="pgname">해동검도 (Haedonggumdo)</div>
+        <div class="pgdesc">대한해동검도협회 연동. 한국 고유의 전통 검술을 현대적으로 계승. 심신 수련과 무사도 정신을 중시하는 전통 무예.</div>
+        <div class="pgtags"><span class="pgtag">해동검도협회</span><span class="pgtag">전통검술</span><span class="pgtag">심신수련</span><span class="pgtag">무사도</span></div>
+        <div class="pgarrow">→</div>
+      </div>
+      <div class="pgcard rv d3"><div class="pgnum">NO.06</div><div class="pgico">⚔️</div>
+        <div class="pgname">군·경찰 전술무술</div>
+        <div class="pgdesc">군·경찰 특수 전술 무술 교육. 강동경찰서 무도사범 활동. 체포술·제압술 전문 과정 운영.</div>
+        <div class="pgtags"><span class="pgtag">군사전술</span><span class="pgtag">체포술</span><span class="pgtag">경찰무도</span></div>
+        <div class="pgarrow">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 주요 사업 -->
+<section style="background:var(--black)" id="business">
+  <div class="inner">
+    <div class="slabel2 rv">주요 사업</div>
+    <h2 class="stitle rv">핵심 <em>사업 영역</em></h2>
+    <div class="divider rv"></div>
+    <div class="biz-grid">
+      <div class="bizcard rv"><div class="biznum">01</div><div class="biztitle">무술 전파 및 세미나</div><div class="bizdesc">합기도, 경찰무술, 실전무술, 호신무술 등 연맹 보유 술기를 통해 한국무예를 홍보하고 문화 콘텐츠로 활성화합니다.</div></div>
+      <div class="bizcard rv d1"><div class="biznum">02</div><div class="biztitle">교육 및 인재 육성</div><div class="bizdesc">인재개발, 재능기부, 장학금 지급. 경찰·경호·호신 단체 교육 지원. 전문 지도자 양성 프로그램 운영.</div></div>
+      <div class="bizcard rv d2"><div class="biznum">03</div><div class="biztitle">생활체육 세계화</div><div class="bizdesc">무예체육 전문지도자 육성으로 자질 향상. 세계 각국 고유무예와 국제단체교류로 세계인의 생활체육 무예 구현.</div></div>
+      <div class="bizcard rv d1"><div class="biznum">04</div><div class="biztitle">공연단 "해보자~"</div><div class="bizdesc">장애인·비장애인 통합 글로벌 문화예술 공연단. 오케스트라·전통무예·국악·뮤지컬 콜라보. 세계 공연 목표.</div></div>
+      <div class="bizcard rv d2"><div class="biznum">05</div><div class="biztitle">무사 백동수 뮤지컬</div><div class="bizdesc">조선 최고의 무사 백동수를 주제로 한 무예 뮤지컬. 전통무예 공연 콘텐츠 개발 및 지역 관광 자원화 추진.</div></div>
+      <div class="bizcard rv d3"><div class="biznum">06</div><div class="biztitle">세계 무예 올림픽</div><div class="bizdesc">TAFISA 세계대회(4년 주기) 참여 및 세계 무예 올림픽 개최 추진. 국위선양 및 문화외교 실현.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 회원 가입 -->
+<section style="background:var(--charcoal)" id="membership">
+  <div class="inner">
+    <div class="slabel2 rv">회원 가입 안내</div>
+    <h2 class="stitle rv">국제기구 회원으로 <em>함께 하세요</em></h2>
+    <div class="divider rv"></div>
+    <p class="sdesc rv" style="margin-bottom:32px">국내 무예종목으로 유일한 UIA 국제기구 등록 단체로서, 국내 17개 시도 지부장 및 해외 지부장 멤버를 모집합니다.</p>
+    <div class="mem-grid">
+      <div class="memcard feat rv">
+        <span class="membadge mb-dom">국내 정회원</span>
+        <div class="memtitle">국내 시·도 지부장</div>
+        <div class="memdesc">17개 시·도 지역 지부장으로 활동하며 지역 무예 발전을 이끌어 주실 분을 모집합니다.</div>
+        <ul class="memlist">
+          <li>TAFISA 국가회원 공식 지부장 자격</li>
+          <li>UIA 국제기구 회원 지위 부여</li>
+          <li>전국 무예대회 개최 권한 지원</li>
+          <li>지역 무예 지도자 육성 지원</li>
+          <li>중앙 본부 각종 사업 우선 지원</li>
+        </ul>
+        <a href="#contact" class="btn-gold" style="font-size:11px;letter-spacing:2px">국내 지부장 신청</a>
+      </div>
+      <div class="memcard rv d1">
+        <span class="membadge mb-int">해외 지부장</span>
+        <div class="memtitle">해외 지부장 모집</div>
+        <div class="memdesc">전세계 100여 개국 네트워크 확장을 위한 해외 지부장을 모집합니다.</div>
+        <ul class="memlist">
+          <li>TAFISA 180개국 네트워크 활용</li>
+          <li>한국무예 현지 보급 및 교육 권한</li>
+          <li>세계 무예 올림픽 참가 자격</li>
+          <li>해외 지부 운영 본부 지원</li>
+          <li>국제 대회·세미나 참가 지원</li>
+        </ul>
+        <a href="#contact" class="btn-out" style="font-size:11px;letter-spacing:2px">해외 지부장 신청</a>
+      </div>
+    </div>
+    <div style="margin-top:32px;padding:24px;background:var(--dark);border-top:2px solid var(--gold-dark)" class="rv">
+      <div style="font-size:12px;font-weight:700;color:var(--gold);margin-bottom:12px;letter-spacing:2px">지도자 등록 가능 종목</div>
+      <div class="tags-wrap">
+        <span class="mtag hl">태권도</span><span class="mtag hl">합기도</span><span class="mtag hl">해동검도</span>
+        <span class="mtag hl">경호무술</span><span class="mtag hl">실전 타격 호신술</span><span class="mtag hl">군·경찰 전술무술</span>
+        <span class="mtag">유도</span><span class="mtag">씨름</span><span class="mtag">택견</span><span class="mtag">국궁</span>
+        <span class="mtag">무예24기</span><span class="mtag">킥복싱</span><span class="mtag">주짓수</span><span class="mtag">기타 무예 종목</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 전통무예진흥법 -->
+<section style="background:var(--black)" id="law">
+  <div class="inner">
+    <div class="slabel2 rv">법적 근거</div>
+    <h2 class="stitle rv">전통무예 <em>진흥법</em></h2>
+    <div class="divider rv"></div>
+    <p class="sdesc rv">서울특별시 전통무예 진흥 및 지원 조례안(의안번호 제2124호)에 근거, 전통무예의 체계적 보존·발전 사업을 추진합니다.</p>
+    <div class="law-box rv">
+      <div style="font-family:'Noto Serif KR',serif;font-size:14px;font-weight:700;color:var(--gold);margin-bottom:16px">📜 서울특별시 전통무예 진흥 및 지원 조례 주요 내용</div>
+      <div class="law-articles">
+        <div class="lart"><div class="lartnum">제2조</div><div class="larttitle">전통무예의 정의</div><div class="lartdesc">국내에서 자생·체계화되었거나 외부 유입 후 독창적으로 정형화된 무적 공법·격투체계로서 국가적 차원에서 진흥할 전통·문화적 가치가 있는 것.</div></div>
+        <div class="lart"><div class="lartnum">제3조</div><div class="larttitle">시장의 책무</div><div class="lartdesc">전통무예 보존·진흥을 위한 시책을 수립·시행하고, 전통무예 활동 장려·육성과 이에 필요한 물적·인적 기반 조성.</div></div>
+        <div class="lart"><div class="lartnum">제4조</div><div class="larttitle">진흥 및 지원 사업</div><div class="lartdesc">교육·지도자 양성, 종목 복원·학술교류, 생활체육 프로그램, 국내외 대회 개최, 관광·문화콘텐츠산업화 추진.</div></div>
+        <div class="lart"><div class="lartnum">제5조</div><div class="larttitle">표창</div><div class="lartdesc">전통무예 진흥에 공적이 뛰어난 개인 또는 단체에 서울특별시 표창 조례에 따라 표창 수여.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 공지·소식 -->
+<section style="background:var(--charcoal)" id="news">
+  <div class="inner">
+    <div class="news-grid">
+      <div>
+        <div class="slabel2 rv">공지 & 소식</div>
+        <h2 class="stitle rv">최신 <em>소식</em></h2>
+        <div class="divider rv"></div>
+        <a class="nitem rv" href="#"><div class="ndbox"><div class="nday">24</div><div class="nmo">MAR</div></div><div><span class="ncat">모집</span><div class="nttl">2025년 국내·해외 지부장 모집 공고</div><div class="nexc">TAFISA 국가회원 한국무예위원회 국내 17개 시도 및 해외 지부장 모집.</div></div></a>
+        <a class="nitem rv d1" href="#"><div class="ndbox"><div class="nday">15</div><div class="nmo">MAR</div></div><div><span class="ncat">행사</span><div class="nttl">서울 돈의문박물관 전통무예 상설 공연 운영</div><div class="nexc">돈의문박물관 마당에서 한국전통무예 공연 및 외국인 무예체험 프로그램 운영.</div></div></a>
+        <a class="nitem rv d2" href="#"><div class="ndbox"><div class="nday">08</div><div class="nmo">MAR</div></div><div><span class="ncat">대회</span><div class="nttl">전국청소년호신무예대회 (문화체육관광부장관상)</div><div class="nexc">청소년 호신무예 역량 강화 및 학교폭력 예방 전국대회 11회 연속 개최.</div></div></a>
+        <a class="nitem rv d3" href="#"><div class="ndbox"><div class="nday">01</div><div class="nmo">MAR</div></div><div><span class="ncat">국제</span><div class="nttl">TAFISA 세계생활체육대회 한국 대표단 구성 발표</div><div class="nexc">4년 주기 TAFISA 세계대회 한국 대표단 구성 및 파견 일정 발표.</div></div></a>
+      </div>
+      <div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px" class="rv">
+          <div style="font-family:'Noto Serif KR',serif;font-size:16px;font-weight:700;color:var(--white)">📅 주요 행사 일정</div>
+          <a href="#" style="font-size:11px;color:var(--gold);text-decoration:none;letter-spacing:2px">전체보기 →</a>
+        </div>
+        <div class="elist">
+          <div class="eitem rv d1"><div class="echip"><div class="eday">05</div><div class="emo">APR</div></div><div style="flex:1"><div class="ename">지부장 모집 설명회</div><div class="eloc">📍 서울 본부 사무소</div></div><span class="ebadge bopen">접수중</span></div>
+          <div class="eitem rv d2"><div class="echip"><div class="eday">19</div><div class="emo">APR</div></div><div style="flex:1"><div class="ename">전국청소년호신무예대회</div><div class="eloc">📍 서울특별시 체육관</div></div><span class="ebadge bplan">예정</span></div>
+          <div class="eitem rv d3"><div class="echip"><div class="eday">03</div><div class="emo">MAY</div></div><div style="flex:1"><div class="ename">무예지도자 세미나</div><div class="eloc">📍 전국 지부 동시 진행</div></div><span class="ebadge bplan">예정</span></div>
+          <div class="eitem rv d4"><div class="echip"><div class="eday">15</div><div class="emo">MAY</div></div><div style="flex:1"><div class="ename">돈의문박물관 무예공연</div><div class="eloc">📍 서울 돈의문박물관</div></div><span class="ebadge bplan">예정</span></div>
+          <div class="eitem rv d5"><div class="echip"><div class="eday">TBD</div><div class="emo">2025</div></div><div style="flex:1"><div class="ename">TAFISA 대표단 파견</div><div class="eloc">📍 국제 행사 추후 공지</div></div><span class="ebadge bplan">예정</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec" id="contact">
+  <div class="cta-pat"></div>
+  <div class="cta-in">
+    <div class="slabel2 rv" style="justify-content:center">함께하기</div>
+    <h2 class="cta-t rv">무예로 세계를 잇는<em>한국무예위원회와 함께!</em></h2>
+    <p class="cta-d rv">TAFISA 국가회원 · UIA 국제기구 등록 · IOC·UNESCO 공인 단체<br>국내외 무예 지도자 및 지부장 여러분의 참여를 기다립니다.</p>
+    <div class="hero-actions rv">
+      <a href="/cdn-cgi/l/email-protection#1b72757d745b7076787a3574697c" class="btn-gold">📧 이메일 문의</a>
+      <a href="tel:02-0000-0000" class="btn-out">📞 전화 문의</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <img src="kmc_logo_wide.png" alt="한국무예위원회" class="footer-logo-img">
+        <div class="fldesc">TAFISA 국가회원 · UIA 국제기구 등록<br>대한민국 전통무예를 세계로 이끄는 공식 기관</div>
+        <div class="flbadges"><span class="flbadge">TAFISA MEMBER</span><span class="flbadge">UIA REGISTERED</span><span class="flbadge">IOC·UNESCO</span></div>
+      </div>
+      <div>
+        <div class="fct">바로가기</div>
+        <ul class="flinks"><li><a href="#about">단체 소개</a></li><li><a href="#international">국제기구</a></li><li><a href="#programs">무예 종목</a></li><li><a href="#business">주요 사업</a></li><li><a href="#law">전통무예진흥법</a></li></ul>
+      </div>
+      <div>
+        <div class="fct">가입 안내</div>
+        <ul class="flinks"><li><a href="#membership">국내 지부장 모집</a></li><li><a href="#membership">해외 지부장 모집</a></li><li><a href="#membership">지도자 등록</a></li></ul>
+      </div>
+      <div>
+        <div class="fct">연락처</div>
+        <div class="fcontact">📍 서울특별시<br>📞 02-0000-0000<br>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dab3b4bcb59ab1b7b9bbf4b5a8bd">[email&#160;protected]</a><br>🌐 www.KMCA.org<br>평일 09:00–18:00</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="fcopy">© 2025 한국무예위원회 (KMC). All rights reserved. | 대표위원장: 최선길</div>
+      <div><a href="#" style="font-size:10px;color:var(--text-muted);text-decoration:none;margin-right:12px">개인정보처리방침</a><a href="#" style="font-size:10px;color:var(--text-muted);text-decoration:none">이용약관</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
